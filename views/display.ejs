@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Number</th>
+                <th>Password</th>
+            </tr>
+            <%for(var i=0; i<mydata.length;i++){%>
+            <tr>
+                <td><%=mydata[i].user_name%></td>
+                <th><%=mydata[i].user_email%></th>
+                <th><%=mydata[i].user_number%></th>
+                <th><%=mydata[i].user_password%></th>
+            </tr>
+            <%}%>
+    </table>
+</body>
+</html>
